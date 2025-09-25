@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+    <style>
+        li::after{
+            content: "\2714";
+            color: rgb(24, 145, 0);
+        }
+        #principal::first-letter{
+            font-size: 30px;
+            color: rgb(255, 0, 0);
+            font-weight: bold; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aqui vemos como funciona os PseudoElementos</h1>
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li> 
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>       
+    </ul>
+    <p id="principal">
+        Note que todos os itens da lista receberam o símbolo de checkmark (✔) ao final do texto, 
+        isso foi possível graças ao uso do pseudo-elemento ::after, que permite adicionar conteúdo 
+        após o conteúdo original do elemento selecionado. <br>
+        Além disso, o primeiro caractere do parágrafo foi estilizado para ser maior, vermelho e em negrito
+        utilizando o pseudo-elemento ::first-letter. Isso destaca visualmente o início do parágrafo.
+        <hr>
+</body>
+<footer>
+    <p><a href="index.html">Voltar</a></p>
+</footer>
+</html>

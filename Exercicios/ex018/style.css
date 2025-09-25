@@ -1,0 +1,25 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'sundori';
+    src: url('fontes/Sundori.woff2') format('woff2'),
+         url('fontes/Sundori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'zombie';
+    src: url('fontes/zombie.woff2') format('woff2'),
+        url('fontes/zombie.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1{
+    font-family: zombie, sans-serif;
+    color: rgb(187, 11, 11);
+}
+p{
+    font-family: sundori, sans-serif;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Criando Sites com HTML e CSS</h1>
+
+    <h1>Aprendendo HTML</h1>
+
+    <h2 class="basico">HTML Básico</h2>
+    <p> Aqui você <span class="basico">aprende</span> a estrutura do HTML e as <span class="basico">tags mais usadas</span>:
+        <ul>
+            <li>Estrutura mínima de uma página (&lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;, &lt;body&gt;).</li>
+            <li>Títulos e parágrafos (&lt;h1&gt; até &lt;h6&gt;, &lt;p&gt;).</li>
+            <li>Quebras de linha e separadores (&lt;br&gt;, &lt;hr&gt;).</li>
+            <li>Ênfase de texto (&lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;).</li>
+            <li>Listas ordenadas e não ordenadas (&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;).</li>
+            <li>Links (&lt;a href&gt; com target, rel).</li>
+            <li>Imagens (&lt;img src alt&gt;).</li>
+            <li>Estrutura semântica básica (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;).</li>
+        </ul>
+    </p>
+    <p>Nesse ponto, o foco é construir páginas simples e estáticas.</p>
+
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <p>Você começa a trabalhar com <span class="intermediario">recursos mais ricos</span> e se preocupar com <span class="intermediario">semântica e acessibilidade</span>:</p>
+        <ul>
+            <li>Formulários (&lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, &lt;button&gt;, label, fieldset, legend).</li>
+            <li>Tabelas (&lt;table&gt;, &lt;tr>, &lt;td&gt;, &lt;th&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;).</li>
+            <li>Multimídia (&lt;audio&gt;, &lt;video&gt;, &lt;source&gt;, &lt;track&gt;).</li>
+            <li>Uso correto de tags semânticas (&lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;).</li>
+            <li>Atributos globais (id, class, title, lang, data-*).</li>
+            <li>Estruturas para acessibilidade (uso de alt, aria-*, ordem lógica).</li>
+            <li>Introdução ao uso de meta tags (SEO e responsividade com viewport).</li>
+        </ul>
+        <p>Aqui você já consegue montar páginas completas, com formulários funcionais e conteúdo organizado.</p>
+
+    <h2 class="avancado">HTML Avançado</h2>
+    <p>Nesse nível, você <span class="avancado">entende</span> como o <span class="avancado">HTML se conecta com CSS, JavaScript e acessibilidade avançada</span>:</p>
+    <ul>
+        <li>Estrutura semântica avançada (boas práticas de SEO e indexação).</li>
+        <li>Microdados e Schema.org (dados estruturados para SEO).</li>
+        <li>Formulários avançados: validação nativa com atributos (required, pattern, min, max, step).</li>
+        <li>Elementos interativos modernos (&lt;details&gt;, &lt;summary&gt;, &lt;dialog&gt;).</li>
+        <li>Canvas e SVG para gráficos e animações.</li>
+        <li>Técnicas de acessibilidade avançada (ARIA roles, tabindex, navegação por teclado).</li>
+        <li>Estrutura para PWA (Progressive Web Apps): uso de manifest.json e service workers (embora HTML sozinho não implemente, você prepara a base).</li>
+        <li>Integração com APIs via atributos e elementos (exemplo: &lt;iframe&gt; com sandbox, vídeos embedados).</li>
+    </ul>
+    <p>No avançado, o foco está em escalabilidade, performance, acessibilidade e integração com outras tecnologias.</p>
+
+    <h3>Resumindo:</h3>
+    <ul>
+        <li>Básico = montar páginas simples.</li>
+        <li>Intermediário = trabalhar com formulários, tabelas, multimídia e semântica.</li>
+        <li>Avançado = acessibilidade, SEO, microdados, interatividade e integração com outras tecnologias.</li>
+    </ul>
+
+    <h1>Aprendendo CSS</h1>
+
+    <h2 class="basico">CSS Básico</h2>
+    <p>Aqui você <span class="basico">aprende</span>
+         a <span class="basico">ligar o CSS ao HTML e os primeiros estilos</span>:</p>
+    <ul>
+        <li>Como aplicar CSS: inline, interno (&lt;style&gt;) e externo (.css).</li>
+        <li>Seletores simples: por tag, classe, id.</li>
+        <li>Cores (nomes, hexadecimais, rgb(), hsl()).</li>
+        <li>Unidades absolutas e relativas (px, em, rem, %, vh, vw).</li>
+        <li>Fontes: font-family, font-size, font-weight, line-height.</li>
+        <li>Estilização de texto (color, text-align, text-decoration, letter-spacing).</li>
+        <li>Bordas, margens e preenchimento (border, margin, padding).</li>
+        <li>Backgrounds (background-color, background-image, background-repeat, background-size).</li>
+        <li>Box model (como funcionam as caixas do CSS).</li>
+    </ul>
+    <p>No básico, você já consegue mudar totalmente o visual de uma página estática.</p>
+
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>Você começa a dominar <span class="intermediario">layouts, posicionamentos e pseudo-classes</span>:</p>
+    <ul>
+        <li>Seletores avançados (filhos >, descendentes, adjacentes +, atributos [attr=value]).</li>
+        <li>Pseudo-classes (:hover, :focus, :nth-child(), :first-child, :last-child).</li>
+        <li>Pseudo-elementos (::before, ::after).</li>
+        <li>Display (block, inline, inline-block, none).</li>
+        <li>Position (static, relative, absolute, fixed, sticky).</li>
+        <li>Float e Clear (conceitos antigos mas importantes).</li>
+        <li>Flexbox (alinhamento e distribuição de elementos).</li>
+        <li>Responsividade: media queries (@media).</li>
+        <li>Cores com transparência (rgba, hsla).</li>
+        <li>Transições (transition).</li>
+        <li>Trabalhar com variáveis CSS (--minha-cor: #333).</li>
+    </ul>
+    <p>No intermediário, você já consegue criar layouts responsivos e interativos.</p>
+
+    <h2 class="avancado">CSS Avançado</h2>
+    <p>Aqui entram as <span class="avancado">técnicas mais modernas e poderosas</span>:</p>
+    <ul>
+        <li>Grid Layout (linhas, colunas, áreas nomeadas).</li>
+        <li>Animações (@keyframes, animation).</li>
+        <li>Transformações (transform: scale, rotate, translate, skew).</li>
+        <li>Clipping e máscaras (clip-path, mask).</li>
+        <li>Filtros (filter: blur, brightness, contrast).</li>
+        <li>Seletores avançadíssimos (como :not(), :is(), :has()).</li>
+        <li>Variáveis customizadas e temas dinâmicos (dark mode).</li>
+        <li>CSS Functions (calc(), min(), max(), clamp()).</li>
+        <li>Customização de scrollbars.</li>
+        <li>Técnicas de performance (melhorar tempo de renderização).</li>
+        <li>Arquitetura de CSS (BEM, ITCSS, SMACSS).</li>
+        <li>Pré-processadores (SASS/SCSS, LESS) e pós-processadores (PostCSS).</li>
+        <li>CSS moderno para acessibilidade (focus visível, prefers-reduced-motion).</li>
+    </ul>
+    <p>No avançado, você tem controle total sobre design, performance e escalabilidade.</p>
+    <h3>Resumindo:</h3>
+    <ul>
+        <li>Básico → estilizar textos, cores, espaçamentos, fundos.</li>
+        <li>Intermediário → responsividade, layouts (flexbox), pseudo-classes.</li>
+        <li>Avançado → grid, animações, efeitos visuais, arquitetura de CSS.</li>
+    </ul>
+</body>
+</html>

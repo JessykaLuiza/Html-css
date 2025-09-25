@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em html5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmica</h1>
+    <p>Tente abrir esse site em outros dispositivos, ou aumente e diminua a janela do navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagemG">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <h2>Com audio e src</h2>
+    <p>Se caso a media não iniciar de um play.</p>
+    <audio src="love-musica.mp3" controls></audio>
+    <!--Formatos mais compativeis MP3, OGG e WAV(Não é recomendado por ser muito grande e deixar o site pesado)-->
+    <h2>Com audio e source</h2>
+    <audio preload="metadata" controls>
+        <source src="love-musica.mp3" type="audio/mpeg">
+        <source src="love-musica2.ogg" type="audio/ogg">
+    </audio>
+    <p>Se caso não conseguir reproduzir, baixe o arquivo mp3 <a href="love-musica.mp3">aqui.</a></p>
+    <!--Se caso quiser deixar uma mensagem somente se as opções de áudio não funcionar, a mensagem deve estar dentro do laço <audio>-->
+
+</body>
+</html>

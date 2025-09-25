@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anotações</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        li {
+            line-height: 28px;
+        }
+        pre {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1 {
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Responsivo</h1>
+    <h2>🔹 A div #video</h2>
+    <pre>
+    #video{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    background-color: #0a3d03;
+}
+    </pre>
+    <ol>
+        <li>position: relative;</li>
+        <ul>
+            <li>Serve para transformar a div em um container de referência.</li>
+            <li>Tudo que for position: absolute dentro dela (como o iframe) vai se posicionar em relação a essa div, e não à página toda.</li>
+        </ul>
+        <li>width: 100%;</li>
+        <ul>
+            <li>Faz a div ocupar toda a largura disponível no elemento pai (o main, por exemplo).</li>
+        </ul>
+        <li>max-width: 800px;</li>
+        <ul>
+            <li>Mesmo que a tela seja muito grande, ela nunca vai passar de 800px de largura.</li>
+            <li>Isso é útil para não deixar o vídeo gigante em telas enormes.</li>
+        </ul>
+        <li>aspect-ratio: 16/9;</li>
+        <ul>
+            <li>Mantém sempre a proporção 16:9, padrão de vídeos.</li>
+            <li>A altura é calculada automaticamente conforme a largura muda.</li>
+        </ul>
+        <li>background-color: #0a3d03;</li>
+        <ul>
+            <li>Pinta o fundo da div.</li>
+            <li>Só aparece porque o iframe não ocupa mais 100% (se cobrisse tudo, esconderia o fundo).</li>
+        </ul>
+    </ol>
+    <h2>🔹 O iframe</h2>
+    <pre>#video iframe{ 
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;  
+}</pre>
+<ol>
+    <li>position: absolute;</li>
+    <ul>
+        <li>Coloca o iframe dentro da div se guiando pela position: relative dela.</li>
+        <li>Assim conseguimos centralizar e ajustar o tamanho.</li>
+    </ul>
+    <li>width: 90%; height: 90%;</li>
+    <ul>
+        <li>O vídeo ocupa só 90% da largura e da altura da div.</li>
+        <li>Isso cria um “respiro” em volta dele.</li>
+    </ul>
+    <li>top: 5%; left: 5%;</li>
+    <ul>
+        <li>Empurra o vídeo 5% pra baixo e 5% pra direita, deixando-o centralizado.</li>
+        <li>Essa soma de 5% em cima + 90% de altura + 5% embaixo = 100%.</li>
+        <li>O mesmo vale na horizontal.</li>
+    </ul>
+</ol>
+<h3>💡 Resultado final</h3>
+<ul>
+    <li>Você criou uma caixa responsiva (#video) que sempre mantém a proporção 16:9.</li>
+    <li>Dentro dela, o vídeo (iframe) ocupa 90% e fica centralizado.</li>
+    <li>O fundo verde aparece como “moldura” em volta do vídeo.</li>
+</ul>
+</body>
+</html>

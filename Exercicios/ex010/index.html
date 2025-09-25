@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1 id="externo">Links Externos</h1>
+        <p><ins>Utilizando o atributo target, rel, title e hreflang.</ins></p>
+    <p>Acesse aqui a minha página no <a href="https://www.youtube.com/@jessykawalker8466" hreflang="pt-br"  title= "Acesse o link aqui" target="_blank" rel="external">YouTube</a>!</p>
+        <p><ins>Sem o atributo target e rel.</ins></p>
+    <p>Acesse aqui minha conta no <a href="https://www.instagram.com/jessyka.luiza/">Instagram</a>!</p>
+    <hr>
+    <h3>target e rel possui outros atributos dentro além de blank e external.</h3>
+    
+    <ul>
+        <li><strong>Tag target</strong></li>
+            <ul style="list-style-type: square;">
+                <li>_blank→ Abre o link em uma nova aba ou janela</li>
+                <li>_self→ Abre o link na mesma aba (padrão, mesmo sem escrever)</li>
+                <li>_top→ Abre o link no topo da janela, ignorando qualquer frame</li>
+                <li>_parent→ Abre o link na janela pai, usada quando se está dentro de frames</li>
+                <li>nome-do-frame→ Abre o link em um frame específico (caso esteja usando frames)</li>
+            </ul>
+        <li><strong>Tag rel</strong></li>
+        <ul style="list-style-type: square;">
+            <li>next→ Link para a próxima parte do conteúdo ou documento</li>
+            <li>prev→ Link para a parte anterior do conteúdo</li>
+            <li>author→ Link para a página ou site do autor do artigo atual</li>
+            <li>external→ Indica que o link leva para fora do seu site</li>
+            <li>nofollow → Informa aos buscadores não seguir esse link</li>
+            <li>noopener → Evita que a nova aba/janela tenha controle sobre a página original</li>
+            <li>noreferrer → Impede que o site de destino receba dados da origem (referência)</li>
+        </ul>
+    </ul>
+    <hr>
+    <h1>Links Internos</h1>
+    <p><a href="pagina2.html" rel="next">Página 2</a></p>
+    <p><a href="pagina3/pag3.html" rel="next"> Página 3</a></p>
+    <p><a href="#externo">Volte ao inicio</a> se perdeu alguma informação!</p>
+    <hr>
+    <h1>Links para Download</h1>
+    <ul>
+        <li>
+            <p><a href="gifbaixar/gifparabaixar.gif" download="gifparabaixar" type="image/gif" target="_blank">Baixar</a> GIF Pingu</p>
+        </li>
+        <li><p><a href="gifbaixar/gifparabaixar2.zip" download="gifparabaixar2" type="application/zip">Baixar</a> GIF Pingu.zip</p></li>
+    </ul>
+    <p>A lista de types para colocar no download de aquivos:
+        <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">https://www.iana.org/assignments/media-types/media-types.xhtml</a>
+    </p>
+    <p><ins>Obs.:</ins><span style="color: red;">Types devem ser colocados em inglês.</span></p>
+</body>
+</html>

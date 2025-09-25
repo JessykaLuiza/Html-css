@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelbox</title>
+    <style>
+    h1{
+        border: 5px solid rgb(255, 60, 0);
+        padding: 10px;
+        width: 90%; /*Assim border fica responsivo, se eu usar px a medida fica fixa e nao se adpta aos tamanhos de telas*/
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 10px;
+        /*display: inline;*/
+    }
+    #principal{
+        border: 5px rgb(0, 0, 255);
+        padding: 5px;
+        text-align: center;
+        margin: 20px auto;
+        border-style: dashed;
+        border-radius: 10px;
+        /*display: block;*/
+        box-shadow: 1px 1px 5px black;
+    }
+</style>
+</head>
+<body>
+    <h1>Modelos de caixa</h1>
+    <p>H1 é um exemplo de box-level e o parágrafo também.</p>
+    <p>Já a tag &lt;a&gt; é um exemplo de inline-level. <a id="principal" href="#">Link de exemplo - teste.</a></p>
+    <p>Para mudar a anatomia padrão de uma caixa, basta colocar no seletor que deseja alterar:
+     <ul>
+        <li>display: inline</li>
+        <li>display: block</li>
+        <li>display: inline-block</li>
+     </ul>
+    </p>
+    <hr style="border: 1px dashed rgb(11, 4, 78);">
+    <a href="pag2.html">
+        <p>Próxima</p>
+    </a>
+</body>
+</html>

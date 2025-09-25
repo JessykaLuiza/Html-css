@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <h1>Bem-vindo ao meu site</h1>
+
+    <main>
+        <h1>Tag &lt;main&gt;</h1>
+        <h2>O que é e pra que serve?</h2>
+        <ul>
+            <li>Elemento semântico que marca o conteúdo principal e único da página (o “miolo” do documento).</li>
+            <li>Ajuda acessibilidade: cria um landmark (“região principal”) que leitores de tela acessam rápido.</li>
+            <li>Ajuda SEO/estrutura: deixa claro aos mecanismos de busca onde está o conteúdo relevante.</li>
+        </ul>
+        <h2>Regras e boas práticas</h2>
+        <ul>
+            <li>Apenas 1 main por página.</li>
+            <li>Fica dentro de body e não deve estar dentro de: header, nav, aside, footer ou article.</li>
+            <li>Não deve conter conteúdo repetitivo global (menus, rodapé fixo, barras laterais).
+            Deve conter o que é único daquela página (artigo, listagem de produtos, formulário principal etc.).</li>
+        </ul>
+        <h2>Erros comuns a evitar</h2>
+        <ul>
+            <li>Colocar mais de um main na página.</li>
+            <li>Colocar main dentro de elementos como header, nav, aside ou footer.</li>
+            <li>Usar div genérica pro conteúdo principal e esquecer a semântica de main.</li>
+            <li>Repetir em main blocos globais (menu, banner universal etc.).</li>
+        </ul>
+        <h2>Quando usar?</h2>
+        <p>Sempre que houver um núcleo de conteúdo que representa o objetivo daquela página (ex.: o post do blog, a página do produto, o formulário principal).</p>
+    </main>
+
+    <footer>
+        <p>Você pode navegar para outras páginas usando os links abaixo:</p>
+        <ul>
+            <li><a href="pag2.html" rel="next">Página 1</a></li>
+            <li><a href="pag3.html" rel="next">Página 2</a></li>
+            <li><a href="pag4.html" rel="next">Página 3</a></li>
+        </ul>
+        <hr>
+        <p>&copy; 2025 Jessyka.Luiza</p>
+    </footer>
+
+</body>
+</html>

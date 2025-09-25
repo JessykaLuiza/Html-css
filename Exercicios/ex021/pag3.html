@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de borda</title>
+    <style>
+        h1{
+            text-align: center;
+            border: solid 10px transparent;
+            margin: 5px auto;
+            border-image-source: url('borda.png');
+            border-image-slice:30;
+            border-image-repeat: repeat;
+        }
+        .link{
+            text-decoration: none;
+            border: 2px solid rgb(2, 9, 53);
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 5px 15px;
+            color: rgb(28, 3, 75);
+    }
+        .link:hover {
+            background-color: rgb(6, 2, 61);
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.384);
+        }
+        #txt{
+            color: rgb(8, 3, 82);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando borda</h1>
+    <p>Aqui colocamos borda por imagem.</p>
+    <h2>Explicando o border-image</h2>
+    <p>O border-image é uma propriedade do CSS que permite usar uma imagem como a borda de um elemento em vez de uma cor ou estilo sólido. É mais avançado que o border comum, porque você consegue fatiar uma imagem e aplicar essas partes nas bordas do elemento (cantos e laterais).</p>
+    <p></p>
+    <p>A propriedade border-image é composta por várias subpropriedades que controlam diferentes aspectos da borda de imagem:</p>
+    <ul>
+        <li>border-image-source: Especifica a imagem que será usada como borda.</li>
+        <li>border-image-slice: Define como a imagem será dividida em nove partes (quatro cantos, quatro lados e o centro). Você pode especificar valores em pixels ou porcentagens para controlar onde a imagem é cortada.</li>
+        <li>border-image-width: Controla a largura da borda de imagem. Pode ser definido em pixels, porcentagens ou usando palavras-chave como "auto".</li>
+        <li>border-image-outset: Define o quanto a borda de imagem deve se estender além da borda do elemento.</li>
+        <li>border-image-repeat: Especifica como as partes da imagem serão repetidas ou esticadas para preencher as bordas. As opções incluem "stretch" (esticado), "repeat" (repetido) e "round" (ajustado para caber).</li>
+    </ul>
+    <p>Exemplo de uso:</p>
+    <pre>
+        
+            border: 10px solid transparent; /* Define a largura da borda */
+            border-image-source: url('borda.png'); /* Imagem da borda */
+            border-image-slice: 30; /* Fatiamento da imagem */
+            border-image-repeat: repeat; /* Repetição da imagem */
+    </pre>
+        <p>No mode shorthand:</p> 
+        <pre>
+            border: 10px solid transparent;
+            border-image: url('borda.png') 30 repeat;
+        </pre>
+        <h3>Bancos de imagens / vetores gratuitos</h3>
+        <ul>
+            <li>Pixabay → Pesquise por "frame border png" ou "ornamental border".</li>
+            <li>Freepik → Muitos vetores decorativos (alguns exigem atribuição).</li>
+            <li>Vecteezy → Tem bastante coisa em PNG e vetor.</li>
+            <li>SVG Repo → Padrões e bordas em SVG (ótimos para não perder qualidade).</li>    
+        </ul>
+        <h3>Ferramentas de padrão online</h3>
+        <li>CSS Gradient → Gera gradientes que você pode salvar e usar como borda.</li>
+        <li>Pattern Monster → Gera padrões SVG que podem virar border-image.</li>
+        <li>Transparent Textures → Padrões leves para aplicar como borda.</li>
+        <hr style="border: 1px dashed rgb(25, 22, 223);">
+      <footer id="txt">
+        <a class="link" href="index.html">voltar</a>
+      </footer>
+</body>
+</html>

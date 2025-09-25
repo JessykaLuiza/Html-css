@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos no html5</title>
+</head>
+<body>
+    <h1>Video hospedado no meu servidor.</h1>
+    <h2>Modo simples video e src.</h2>
+    <video controls width="500px" height="350px" poster="noite-estrelada-img.png" src="Videos/noite-estrelada.mp4"></video>
+    <hr>
+    <h2>Modo video e source.</h2>
+    <video width="500px" height="350px" controls poster="noite-estrelada-img.png">
+        <source src="Videos/noite-estrelada.mp4" type="video/mp4">
+        <source src="Videos/noite-estrelada2.webm" type="video/webm">
+        <p>Se caso a media não reproduzir baixe o arquivo mp4 <a href="Videos/noite-estrelada.mp4">aqui</a></p>
+    </video>
+    <hr>
+    <h1>Inserindo Vídeos Externos</h1>
+    <h2>Tag iframe</h2>
+    <p>Youtube</p>
+    <iframe width="500" height="350" src="https://www.youtube.com/embed/Sct5j7Quo54?si=jzFDItBT8p0TJUI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Explicação dos atributos especiais:
+allow="..."
+Esse atributo define quais permissões o iframe tem. Ele ativa funcionalidades do navegador que são normalmente bloqueadas por segurança.
+
+Permissão	O que permite fazer:
+accelerometer	Permite o vídeo ou conteúdo usar os sensores de movimento do dispositivo (em celulares).
+autoplay	Permite o vídeo começar automaticamente sem o usuário dar play (se o navegador permitir).
+clipboard-write	Permite que o conteúdo do iframe escreva na área de transferência (ex: copiar algo).
+encrypted-media	Permite a reprodução de conteúdos protegidos, como vídeos com DRM (ex: músicas licenciadas).
+gyroscope	Permite acesso ao giroscópio, que detecta rotação do dispositivo (usado em realidade aumentada, por exemplo).
+picture-in-picture	Permite o botão de "modo flutuante" (assistir vídeo fora da aba atual).
+web-share	Permite que o iframe use a API de compartilhamento nativa do navegador (abrir menu "compartilhar").
+
+referrerpolicy="strict-origin-when-cross-origin"
+Esse atributo controla quais informações o navegador envia ao acessar o link do src.
+
+"strict-origin-when-cross-origin" significa:
+
+Se for o mesmo domínio, o navegador envia tudo (URL completa).
+
+Se for outro site (como o YouTube), só envia a origem (ex: https://seusite.com) e não a URL completa.
+
+Isso protege sua privacidade e evita que o outro site saiba exatamente de onde o visitante veio.
+
+allowfullscreen
+Permite que o usuário coloque o vídeo em tela cheia. Se remover esse atributo, o botão de fullscreen não aparece.
+
+frameborder="0"
+Remove a borda ao redor do vídeo. (Esse atributo está obsoleto — o correto hoje é usar CSS style="border: none;")-->
+<hr>
+<p>Vímeo</p>
+<p>Aqui está mostrando título, foto e nome do autor.</p>
+<iframe src="https://player.vimeo.com/video/252948833?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="350" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Pingu the Baker (alternative sound design)"></iframe>
+<hr>
+    <ul>
+        Aqui foi alterado informações na url em src:
+        <li>title=0: oculta o título do vídeo.</li>
+        <li>byline=0: oculta o nome do autor.</li>
+        <li>portrait=0: oculta a foto de perfil do autor (se houver).</li>
+    </ul>
+
+<br>
+<iframe 
+  src="https://player.vimeo.com/video/252948833?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" 
+  width="500" 
+  height="350" 
+  frameborder="0" 
+  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  title="Pingu the Baker (alternative sound design)">
+</iframe>
+<!--No vimeo plus essa opção de retirar essas informações já ficam liberadas para serem feitas nos ajustes antes de copiar o código-->
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+div {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            text-align: center;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        div:hover {
+            background-color: lightblue;
+        }
+        #quatro:hover {
+            background-color: rgb(0, 79, 153);
+            color: rgb(255, 255, 255);
+
+        }
+        #quatro >p {
+            display: none;
+        }
+        #quatro:hover>p {
+            display: block;
+            color: white;
+            font-size: 20px;
+            background-color: gray;
+        }

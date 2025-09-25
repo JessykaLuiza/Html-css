@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: #ece1bb;
+}
+h1{
+    color: #9B2915;
+    text-align: center;
+    background-color: white;
+}
+h1#principal {
+    color: #ece1bb;
+    background-color: #9B2915;
+    text-align: center;
+}
+p{
+    font: normal 17px opens Sans, sans-serif;
+}
+li{
+    font: normal 16px cambria, cochin, georgia, times, 'times new roman', serif;
+ }
+ .basico {
+    color: #1bb83a;
+    font-weight: bold;
+ } 
+ .intermediario {
+    color: #0a87cf;
+    font-weight: bold;
+ }
+ .avancado {
+    color: #bb0f0f;
+    font-weight: bold;
+ }
