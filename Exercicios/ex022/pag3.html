@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-position</title>
+    <style>
+        .bloco {
+            width: 850px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+            background-image: url(imagens/wallpaper003.jpg);
+            
+        }
+        #b1 {
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+        #b2 {
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+        #b3{ 
+            background-position:center center;
+            background-repeat: no-repeat;
+        }
+        #b4 {
+            background-position: right bottom;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Usando background-position</h1>
+    <div class="bloco" id="b1"></div>
+    <div class="bloco" id="b2"></div>
+    <div class="bloco" id="b3"></div>
+    <div class="bloco" id="b4"></div>
+</body>
+</html>
