@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando Div</title>
+    <style>
+        #fora {
+            position: relative;
+            width: 450px;
+            height: 450px;
+            margin: auto;
+            padding: 10px;
+            background-color: rgb(104, 3, 107);
+            background-image: url(imagens/target001.png);
+            background-repeat: no-repeat;  
+            background-size: 100% 100%;
+        }
+        #dentro {
+            width:235px;
+            height:235px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(179, 255, 0);
+             background-image: url(imagens/target001.png);
+            background-repeat: no-repeat;  
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Centralizando uma div na vertical e na horizontal.</h1>
+    <div id="fora">
+        <div id="dentro"></div>
+    </div>
+    
+</body>
+</html>
