@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cute';
+    src: url('fonte/cute.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'lilitaone';
+    src: url('fonte/lilitaone.ttf') format('truetype');
+    font-display: swap;
+}
+:root {
+    --fonte1: 'cute', sans-serif;
+    --fonte2: 'lilitaone', sans-serif;
+    --fonte3: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body {
+    min-height: 100vh;
+    background-color: #fdf6f6;
+    font-family: var(--fonte3);
+    font-size: 14px;
+}
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px
+}
+header h1 {
+    font-family: var(--fonte2); 
+    font-size: 45px;
+    text-transform:capitalize;
+    letter-spacing: 2px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(221, 162, 0);
+    transition: 0.5s;
+}
+section {
+    padding: 10vh 0 10vh 0;
+    letter-spacing: 2px;
+    line-height: 31px;
+    font-family:var(--fonte1);
+    font-size: 20px;  
+}
+.normal {
+    background-color: #fff;
+    color: rgb(0, 0, 0);  
+}
+.normal p {
+    padding: 15px;
+}
+.imagem {
+    background-color: rgb(116, 111, 111);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
+    background-attachment: fixed;
+}
+.imagem p {
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 300px;
+    height: 365px;
+    padding: 10px;
+    margin-top: 10px;
+    text-shadow: 7px 4px 4px #000000;
+}
+#img1{
+    background-image: url(imagens/flores.jpg);
+}
+#img2{
+    background-image: url(imagens/letras.png);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
